@@ -18,7 +18,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.faiss import FAISS
 from pypdf import PdfReader
 import os
-from dotenv import load_dotenv
 
 
 api = st.secrets['OPENAI_API_KEY']
