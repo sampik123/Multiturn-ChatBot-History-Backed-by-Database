@@ -21,13 +21,7 @@ import os
 from dotenv import load_dotenv
 
 
-
-# Load environment variables from .env file
-load_dotenv()
-
-
-# Get the API key from the environment variables
-api = os.getenv("OPENAI_API_KEY")
+api = st.secrets['OPENAI_API_KEY']
 
 
 # Initialize SQLite database for chat history
